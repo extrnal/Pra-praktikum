@@ -1,4 +1,6 @@
 #include<iostream>
+#include<conio.h>
+#include<math.h>
 
 using namespace std;
 
@@ -16,7 +18,9 @@ int main()
 	            cout << "|    2. Pengurangan            |" << endl;
 	            cout << "|    3. Perkalian              |" << endl;
 	            cout << "|    4. Pembagian              |" << endl;
-	            cout << "|    5. Keluar                 |" << endl;
+	            cout << "|    5. Perpangkatan           |" << endl;
+	            cout << "|    6. Akar	               |" << endl;
+	            cout << "|    7. Keluar                 |" << endl;
 	            cout << "================================" << endl;
 	            cout << "Masukkan pilihan anda : ";
 	            cin >> pilih;
@@ -81,6 +85,34 @@ int main()
 		else goto keluar;
 	}
 	else if (pilih==5) 
+	{
+		cout << "Masukkan Bilangan Pertama : ";
+		cin >> a;
+		cout << "Masukkan Bilangan Kedua   : ";
+		cin >> b;
+		hasil = pow(a, b);
+		cout << "hasilnya adalah : " << hasil;
+		cout << endl;
+		cout << "Masih lanjut [y/t]? ";
+		cin >> lagi;
+		if (lagi == 'y')
+		goto menu;
+		else goto keluar;
+	}
+	else if (pilih==6) 
+	{
+		cout << "Masukkan Bilangan Pertama : ";
+		cin >> a;
+		hasil = sqrt(a);
+		cout << "hasilnya adalah : " << hasil;
+		cout << endl;
+		cout << "Masih lanjut [y/t]? ";
+		cin >> lagi;
+		if (lagi == 'y')
+		goto menu;
+		else goto keluar;
+	}
+	else if (pilih==7) 
 	{
 		keluar:
 		cout << endl;
