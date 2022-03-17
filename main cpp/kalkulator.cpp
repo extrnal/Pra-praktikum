@@ -19,7 +19,7 @@ int main()
 	            cout << "|    3. Perkalian              |" << endl;
 	            cout << "|    4. Pembagian              |" << endl;
 	            cout << "|    5. Perpangkatan           |" << endl;
-	            cout << "|    6. Akar	            |" << endl;
+	            cout << "|    6. Akar                   |" << endl;
 	            cout << "|    7. Keluar                 |" << endl;
 	            cout << "================================" << endl;
 	            cout << "Masukkan pilihan anda : ";
